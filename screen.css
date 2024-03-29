@@ -1,0 +1,50 @@
+body, h1, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  background: #8EA604;
+  height: 80px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #BF3100;
+
+  width: 0;  
+  height: 0;  
+  border-left: 30px solid transparent; 
+  border-right: 30px solid transparent; 
+  border-bottom: 50px solid; 
+  align-items: center; 
+  margin: auto;
+  position: absolute;
+}
+
+.profile-container {
+  background-color: #D76A03;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 70%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+
