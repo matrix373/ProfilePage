@@ -4,6 +4,7 @@ body, h1, p {
   font-family: Arial, sans-serif;
 }
 
+
 nav {
   display: flex;
   position: sticky;
@@ -32,19 +33,77 @@ nav a{
   background-color: #D76A03;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto;
   gap: 1rem;
 
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 2% 10%;
   padding: 2rem;
-  width: 70%;
+  max-width: 1200px;
 }
 
-img {
-  width: 200px;
-  height: 200px;
+.profile-photo {
+  background: no-repeat center / cover url('Images/DWTB2556.jpg');
+  border-radius: 50%;
+  border: 5px solid black;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+
+  height: 300px;
+  width: 300px;
 }
 
+.profile-header {
+  background-color: #EC9F05;
+  border: 5px solid black;
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+}
+
+h1 {
+  color: black; 
+  font-size: 3em; 
+  padding: 10px;
+  text-align: center;
+}
+
+ul {
+  margin: 10px;
+  font-size: 2em;
+}
+
+.posts {
+  background-color: #F5BB00;
+  gap: 10px;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5BB00; 
+  padding: 15px;
+}
+
+.posts img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+@media (max-width: 800px) {
+  .profile-container {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo, .profile-header {
+    grid-column: 1 / -1; 
+  }
+
+  .posts-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  }
+}
 
