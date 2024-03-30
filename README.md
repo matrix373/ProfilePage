@@ -1,1 +1,2 @@
 # ProfilePage
+FIGMA DESGIN IS IN IMAGES FOLDER!
